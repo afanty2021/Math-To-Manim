@@ -6,11 +6,82 @@
 [![Manim Version](https://img.shields.io/badge/manim-v0.19.0-orange)](https://www.manim.community/)
 [![Claude Sonnet 4.5](https://img.shields.io/badge/Claude-Sonnet%204.5-blueviolet)](https://www.anthropic.com)
 
+
+[![Star History Chart](https://api.star-history.com/svg?repos=HarleyCoops/Math-To-Manim&type=date&legend=top-left)](https://www.star-history.com/#HarleyCoops/Math-To-Manim&type=date&legend=top-left)
+
+---
+
+<div align="center">
+
+# The Hopf Fibration
+
+![Hopf Fibration](public/TeachingHopf.gif)
+
+*A visualization of the S3 to S2 mapping, showing how 4D hypersphere fibers map to linked circles in 3D space. Generated purely from a natural language prompt using the new Gemini 3 Agent Pipeline.*
+
+</div>
+
+---
+
+## NEW: Google Gemini 3 Agent Pipeline (November 24, 2025)
+
+**Full Google ADK Agent pipeline now available!** See `Gemini3/` folder for complete implementation.
+
+We've refactored the entire system to use the **Google Agent Development Kit (ADK)** and **Gemini 3** models:
+- **Six-Agent Swarm** - Concept Analyzer, Prerequisite Explorer, Math Enricher, Visual Designer, Narrative Composer, Code Generator
+- **Google ADK Integration** - Native agent orchestration
+- **Gemini 3 Reasoning** - State-of-the-art logic for complex topology and physics
+- **Full Pipeline Refactor** - Clean, modular agent architecture
+
+**Quick Start:**
+```bash
+# Set API key
+echo "GOOGLE_API_KEY=your_key_here" >> .env
+
+# Run full pipeline
+python Gemini3/run_pipeline.py "Explain the Hopf Fibration"
+```
+
+**Full docs**: [Gemini3/docs/GOOGLE_ADK_AGENTS.md](Gemini3/docs/GOOGLE_ADK_AGENTS.md)
+
+> **Note:** The original **Claude Sonnet 4.5**, **Kimi K2**, and **DeepSeek** pipelines all still work! Use the one that fits your API access and needs.
+
+---
+
+## NEW: Kimi K2 Implementation (November 6, 2025)
+
+**Full Kimi K2 pipeline now available!** See `KimiK2Thinking/` folder for complete implementation.
+
+We've built an alternative pipeline using **Kimi K2 thinking model** from Moonshot AI with:
+- **OpenAI-compatible API** - Easier integration
+- **Tool-calling interface** - Structured data extraction via function calling  
+- **Complete enrichment chain** - Math, visual, and narrative agents
+- **LaTeX-focused** - Focuses on exact math rendering, lets Manim handle visuals
+
+**Quick Start:**
+```bash
+# Set API key
+echo "MOONSHOT_API_KEY=your_key_here" >> .env
+
+# Run full pipeline
+python KimiK2Thinking/examples/run_enrichment_pipeline.py tree.json
+```
+
+**Full docs**: [KimiK2Thinking/README.md](KimiK2Thinking/README.md)
+
 ---
 
 ## See It In Action
 
 <div align="center">
+
+**Brownian Motion: From Pollen to Portfolio**
+
+![Brownian Motion](public/BrownianFinance.gif)
+
+*A journey from Robert Brown's microscope to Einstein's heat equation, arriving at the Black-Scholes model for financial options pricing. Visualizes the connection between random walks, diffusion, and stochastic calculus.*
+
+---
 
 **ProLIP: Probabilistic Vision-Language Model**
 
@@ -28,33 +99,11 @@
 
 ---
 
-**ULTRA QED: The Complete Quantum Electrodynamics Journey**
+**Recursive Rhombicosidodecahedron**
 
-![ULTRA QED Animation](media/videos/ULTRAQED/480p15/ULTRAQEDComplete_ManimCE_v0.19.0.gif)
+![Recursive Rhombicosidodecahedron](public/Rhombicosidodecahedron.gif)
 
-*A comprehensive 4-minute, one-shot visualization of Quantum Electrodynamics generated entirely from a single text prompt with zero manual editing or intervention. This unedited journey spans 11 interconnected scenes covering the complete theoretical framework of the electromagnetic interaction.*
-
-**Complete Conceptual Map:**
-
-1. **Scene 1 — Cosmic Opening:** Establishes the universal scale with a static starfield backdrop (150 celestial objects), setting the stage for fundamental physics.
-2. **Scene 2 — Spacetime Foundations:** Introduces Minkowski spacetime geometry with the relativistic metric $ds^2 = -c^2 dt^2 + dx^2 + dy^2 + dz^2$, visualizing light cone structures that define causality.
-3. **Scene 3 — Quantum Field Emergence:** Transitions from classical concepts to quantum field theory foundations, establishing the field-theoretic framework.
-4. **Scene 4 — Maxwell's Transformation:** Evolves classical electromagnetic waves ($\vec{E}$ and $\vec{B}$ fields oscillating perpendicular to propagation direction $\vec{k}$) through the wave equation $\nabla^2 \vec{E} - \frac{1}{c^2}\frac{\partial^2 \vec{E}}{\partial t^2} = 0$, demonstrating Maxwell's four equations in differential form, and culminating in the relativistic electromagnetic field strength tensor $F^{\mu\nu}$ formulation $\partial_\mu F^{\mu\nu} = \mu_0 J^\nu$.
-5. **Scene 5 — QED Lagrangian Heart:** Presents the complete QED Lagrangian density with color-coded term-by-term breakdown:
-
-   $$\mathcal{L}_{\text{QED}} = \bar{\psi}(i\gamma^\mu D_\mu - m)\psi - \tfrac{1}{4}F_{\mu\nu}F^{\mu\nu}$$
-
-   Components: Dirac spinor $\psi$ (fermion fields), gamma matrices $\gamma^\mu$ (Dirac algebra), covariant derivative $D_\mu$ (gauge coupling), mass term $m$, and field strength $F_{\mu\nu}$ (photon dynamics).
-6. **Scene 6 — Feynman Diagram Gallery:** Visualizes three fundamental QED processes through spacetime diagrams: electron-electron scattering (single photon exchange), electron-positron annihilation (matter to photons), and pair creation (photons to matter-antimatter).
-7. **Scene 7 — Fine Structure Constant:** Explores nature's dimensionless coupling constant $\alpha \approx \tfrac{1}{137.036}$, the fundamental parameter governing electromagnetic interaction strength.
-8. **Scene 8 — Running Coupling:** Demonstrates quantum corrections and renormalization through energy-dependent coupling $\alpha(Q^2)$, showing how interaction strength varies with momentum transfer.
-9. **Scene 9 — Vacuum Polarization:** Reveals virtual particle loops and quantum vacuum structure, where "empty" space seethes with ephemeral electron-positron pairs affecting photon propagation.
-10. **Scene 10 — Grand Synthesis:** Integrates all previous concepts into a unified theoretical framework, connecting spacetime geometry, gauge theory, and quantum mechanics.
-11. **Scene 11 — Cosmic Finale:** Returns to the universal scale, demonstrating how QED emerges as the quantum field theory describing all electromagnetic phenomena throughout the cosmos.
-
-*Note: Some text overlap occurs during transitions between dense mathematical content — this is characteristic of unedited one-shot generation maintaining continuous narrative flow without post-production cleanup. The complete mathematical journey from relativistic spacetime through gauge field theory to renormalization demonstrates the power of single-prompt comprehensive visualization.*
-
-Generated by: Claude Sonnet 4.5 | Render time: 22 minutes | Output: 4:21 duration, 854×480 @ 15fps | File size: 48.7 MB
+*A fractal Archimedean solid where every vertex spawns another complete rhombicosidodecahedron, showcasing precise 3D transformations and recursive geometry driven from a single prompt.*
 
 </div>
 
@@ -347,9 +396,56 @@ If the LLM generates broken code, I can pass it back with the error and ask for 
 
 ---
 
+## Recent Updates
+
+### November 6, 2025: Kimi K2 Thinking Model Integration
+
+**New**: Full Kimi K2 implementation now available in `KimiK2Thinking/` folder!
+
+We've built a complete alternative pipeline using **Kimi K2 thinking model** from Moonshot AI. This implementation:
+
+- **Uses OpenAI-compatible API** - Easier integration than Claude SDK
+- **Tool-calling interface** - Structured data extraction via function calling
+- **Complete enrichment chain** - Mathematical, visual, and narrative agents
+- **Focuses on LaTeX equations** - Let Manim handle visual elements automatically
+
+**Key Features:**
+- `KimiPrerequisiteExplorer` - Builds knowledge trees recursively
+- `KimiEnrichmentPipeline` - Three-stage enrichment (math → visuals → narrative)
+- Tool adapter system - Converts tools to verbose instructions when needed
+- CLI tools for running the full pipeline
+
+**How It Works:**
+1. **Prerequisite Exploration**: Recursively discovers what concepts must be understood before the target concept
+2. **Mathematical Enrichment**: Adds LaTeX equations, definitions, and examples to each node using tool calls
+3. **Visual Design**: Describes visual content (not Manim classes) - focuses on what should appear, not how to implement it
+4. **Narrative Composition**: Stitches everything into a 2000+ word verbose prompt with exact LaTeX rendering
+
+**Getting Started:**
+```bash
+# Set up Kimi API key
+echo "MOONSHOT_API_KEY=your_key_here" >> .env
+
+# Run prerequisite exploration
+python KimiK2Thinking/examples/test_kimi_integration.py
+
+# Run full enrichment pipeline on existing tree
+python KimiK2Thinking/examples/run_enrichment_pipeline.py path/to/tree.json
+```
+
+**Documentation**: See [KimiK2Thinking/README.md](KimiK2Thinking/README.md) for complete setup, usage, and architecture details.
+
+**Why Kimi K2?**
+- OpenAI-compatible API makes integration straightforward
+- Tool-calling interface provides structured data extraction
+- Thinking mode shows reasoning steps
+- Cost-effective alternative to Claude for many use cases
+
+---
+
 ## What I'm Working On
 
-### Current Status (October 2025)
+### Current Status (November 2025)
 - Refactored to Claude Sonnet 4.5 + Claude Agent SDK
 - 55+ working example animations
 - Reverse knowledge tree core algorithm implemented
@@ -403,7 +499,8 @@ See all examples: [docs/EXAMPLES.md](docs/EXAMPLES.md)
 
 ### Cross-Model Support
 I've used multiple AI models to generate examples:
-- **Claude Sonnet 4.5**: Primary agent system
+- **Claude Sonnet 4.5**: Primary agent system (Claude SDK)
+- **Kimi K2**: Alternative implementation with OpenAI-compatible API (see `KimiK2Thinking/`)
 - **DeepSeek R1**: Many quantum physics examples
 - **Gemini 2.5 Pro**: Alternative QED visualizations
 - **Grok 3**: Quantum mechanics approaches
@@ -596,3 +693,4 @@ MIT License - See [LICENSE](LICENSE)
 ---
 
 **Built with recursive reasoning, not training data. Powered by Claude Sonnet 4.5.**
+
